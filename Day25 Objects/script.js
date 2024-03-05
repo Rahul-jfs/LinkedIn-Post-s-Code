@@ -34,3 +34,29 @@ let user2 = { name: "Peter", age: 30 };
 
 console.log("age" in user2); // true, user.age exists
 console.log("blabla" in user2); //false
+
+// cloning the object
+// Object.assign(dest, source1, source2, ..sourceN)
+let user3 = { name: "Sonu" };
+let permission1 = { canView: true };
+let permission2 = { canChange: false };
+Object.assign(user3, permission1, permission2);
+
+console.log(user3); //{name: 'Sonu', canView: true, canChange: false}
+
+// Deep clone
+// structured clone:
+let user4 = {
+  name: "John",
+  sizes: {
+    height: 182,
+    width: 50,
+  },
+};
+let clone = structuredClone(user4);
+
+console.log(user4.sizes === clone.sizes); // false, different objects
+
+// user and clone are totally unrelated now
+user4.sizes.width = 60; // change a property from one place
+console.log(clone.sizes.width);
