@@ -1,0 +1,61 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  font-family: monospace;
+  background-color: rgb(71 85 105);
+  width: 30%;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  width: 70%;
+}
+
+.add {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: green;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.del {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  right: 0;
+}
