@@ -9,6 +9,9 @@ function addTask() {
     var deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("del");
+    deleteButton.onclick = function () {
+      taskList.removeChild(li);
+    };
 
     li.appendChild(deleteButton);
     taskList.appendChild(li);
