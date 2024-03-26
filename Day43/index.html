@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.758);
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      div {
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        box-shadow: 0 0 10px 1px;
+      }
+      #result {
+        margin: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Rock Paper Scissors</h1>
+      <p>Choose your move:</p>
+      <button onclick="play('rock')">Rock</button>
+      <button onclick="play('paper')">Paper</button>
+      <button onclick="play('scissors')">Scissors</button>
+
+      <div id="result"></div>
+      <div id="score"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
