@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
+        font-family: Arial, sans-serif;
         transition: background-color 0.3s ease;
+        text-align: center;
       }
-
-      .dark-mode {
-        background-color: #222;
-        color: #fff;
-      }
-
       .light-mode {
-        background-color: #fff;
-        color: #222;
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .dark-mode {
+        background-color: #333333;
+        color: #ffffff;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 20px;
+        border: 2px solid black;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <h1>Change mode</h1>
-    <button id="mode-toggle">Toggle Mode</button>
+    <h1>Mode Change</h1>
+    <h3>
+      Respect yourself enough to walk away from anything that doesn’t serve you,
+      grow you, or make you happy.
+    </h3>
+
+    <button onclick="toggleMode()">Toggle Mode</button>
     <script src="script.js"></script>
   </body>
 </html>
